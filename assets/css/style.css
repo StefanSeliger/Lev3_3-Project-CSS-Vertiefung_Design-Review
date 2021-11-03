@@ -76,6 +76,19 @@ header nav ul li {
     font-size: 1rem; 
 }
 
+/* = Mobile Nav = */
+header nav div {
+    display: none;
+}
+
+header nav div span {
+    display: block; 
+    width: 50px; 
+    height: 5px; 
+    margin: 5px; 
+    background: black; 
+}
+
 #logo {
     font-size: 1.8rem; 
 }
@@ -89,6 +102,7 @@ header nav ul li {
 #getStarted:hover {
     background: #27282A; 
     color: white; 
+    transition: .2s linear;
 }
 
 header h1 {
@@ -245,6 +259,18 @@ footer div:nth-of-type(2) p {
 }
 
 @media screen and (max-width:600px) {
+    header nav ul {
+        display: none; 
+    }
+    
+    header nav div {
+        display: block;
+    }
+    
+    main > section:nth-of-type(1) {
+        padding: 10vh 10vw; 
+    }
+    
     main > div:nth-of-type(1) {
         flex-wrap: wrap;
         justify-content: center; 
@@ -252,14 +278,17 @@ footer div:nth-of-type(2) p {
     }
 
     main > div:nth-of-type(1) img {
-        margin-bottom: 3vh; 
+        margin-bottom: 5vh; 
     }
 
     main > div:nth-of-type(1) {
         flex-wrap: wrap; 
     }
     
-    
+    main > div:nth-of-type(2) {
+        margin: 10vh 10vw; 
+    }
+
     main > div:nth-of-type(2) article p {
         padding-bottom: 4vh;  
     }
