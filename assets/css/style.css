@@ -102,7 +102,7 @@ header nav div span {
 #getStarted:hover {
     background: #27282A; 
     color: white; 
-    transition: .2s linear;
+/*     transition: .2s linear; */
 }
 
 header h1 {
@@ -286,7 +286,14 @@ footer div:nth-of-type(2) p {
     }
     
     main > div:nth-of-type(2) {
+        flex-wrap: wrap;
+        justify-content: center; 
         margin: 10vh 10vw; 
+    }
+
+    main > div:nth-of-type(2) img {
+        width: 50vw; 
+        order: 0; 
     }
 
     main > div:nth-of-type(2) article p {
