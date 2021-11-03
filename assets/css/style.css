@@ -1,0 +1,293 @@
+/* ===== General Styles ===== */
+@font-face {
+    font-family: Graphik-Medium;
+    src: url(../fonts/Graphik-Medium.ttf);
+}
+
+@font-face {
+    font-family: Graphik-Regular;
+    src: url(../fonts/Graphik-Regular.woff);
+}
+
+@font-face {
+    font-family: Theinhardt;
+    src: url(../fonts/Theinhardt-Lt.woff);
+}
+
+@font-face {
+    font-family: TiemposHeadline;
+    src: url(../fonts/TiemposHeadline-Semibold.woff);
+}
+
+.graphikR {
+    font-family: Graphik-Regular;
+}
+
+.graphikM {
+    font-family: Graphik-Medium;
+}
+
+.tiempos {
+    font-family: TiemposHeadline;
+}
+
+/* Farben: #2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Theinhardt;
+}
+
+html {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+.fontColorGrey {
+    color: #848689; 
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+/* ===== Header Styles ===== */
+header nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin: 3vh 0; 
+    padding: 0 4vw; 
+}
+
+header nav ul {
+    display: flex; 
+    list-style: none;
+}
+
+header nav ul li {
+    padding-left: 20px; 
+    font-size: 1rem; 
+}
+
+#logo {
+    font-size: 1.8rem; 
+}
+
+#getStarted {
+    padding: 5px 45px; 
+    border: 1px solid black; 
+    border-radius: 3px;
+}
+
+#getStarted:hover {
+    background: #27282A; 
+    color: white; 
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 10vh 0 5vh 0; 
+}
+
+header img {
+    width: 100vw; 
+}
+
+/* ===== Main Styles ===== */
+
+/* = Main Section 1 = */
+main > section:nth-of-type(1) {
+    display: flex; 
+    align-items: center;
+    padding: 15vh 10vw; 
+}
+
+main > section:nth-of-type(1) p {
+    width: 60%; 
+    font-size: 1.2rem;
+    line-height: 30px; 
+}
+
+main > section:nth-of-type(1) div {
+    width: 40%; 
+    margin-left: 5vw; 
+}
+
+main > section:nth-of-type(1) div p:nth-of-type(1) {
+    font-size: 4rem; 
+    margin-bottom: 2vh; 
+}
+
+/* = Main Div 1 = */
+main > div:nth-of-type(1) {
+    display: flex; 
+/*     flex-wrap: wrap;  */
+    align-items: center; 
+    padding: 15vh 10vw; 
+}
+
+main > div:nth-of-type(1) img {
+    width: 40vw; 
+}
+
+main > div:nth-of-type(1) article {
+    padding: 0 3vw;  
+}
+
+main > div:nth-of-type(1) article h2 {
+    margin-bottom: 5vh;  
+}
+
+main > div:nth-of-type(1) article h3 {
+    margin: 2vh 0;  
+}
+
+/* = Main Div 2 = */
+main > div:nth-of-type(2) {
+    display: flex; 
+    align-items: center; 
+    margin: 15vh 10vw; 
+    background: rgb(241,241,244); 
+}
+
+main > div:nth-of-type(2) img {
+    width: 40vw; 
+    order: 1; 
+}
+
+main > div:nth-of-type(2) article {
+    padding: 0 4vw;  
+}
+
+main > div:nth-of-type(2) article h2 {
+    margin: 2vh 0;  
+}
+
+main > div:nth-of-type(2) article ol {
+    margin-left: 2vw;  
+}
+
+/* = Main Section 2 = */
+main > section:nth-of-type(2) {
+    text-align: center;
+    margin: 15vh 10vw; 
+}
+
+main > section:nth-of-type(2) h2 {
+    margin-bottom: 5vh; 
+}
+
+main > section:nth-of-type(2) p {
+    margin-bottom: 2vh;  
+}
+
+/* = Main Div 3 = */
+main > div:nth-of-type(3) img { 
+    width: 100vw; 
+}
+
+/* = Main Article= */
+main > article {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10vw 15vh 10vw; 
+    margin-top: -8vh; 
+}
+
+main > article img {
+    width: 35vw; 
+    order: 1; 
+} 
+
+main > article p {
+    width: 22%; 
+    align-self: center; 
+    font-weight: bold; 
+    line-height: 30px;
+}
+
+/* ===== Footer Styles ===== */
+footer {
+    text-align: center;
+}
+
+footer div:nth-of-type(1) {
+    margin: 15vh 10vw; 
+    border-top: 2px solid #3D3E41; 
+}
+ 
+footer div:nth-of-type(1) h2 {
+    margin: 20vh 0; 
+}
+
+footer div:nth-of-type(2) {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh; 
+}
+
+footer div:nth-of-type(2) img {
+    width: 5vw; 
+}
+
+footer div:nth-of-type(2) p {
+    margin-right: 1vw; 
+}
+
+@media screen and (max-width:600px) {
+    main > div:nth-of-type(1) {
+        flex-wrap: wrap;
+        justify-content: center; 
+        padding: 5vh 10vw;
+    }
+
+    main > div:nth-of-type(1) img {
+        margin-bottom: 3vh; 
+    }
+
+    main > div:nth-of-type(1) {
+        flex-wrap: wrap; 
+    }
+    
+    
+    main > div:nth-of-type(2) article p {
+        padding-bottom: 4vh;  
+    }
+    
+    main > div:nth-of-type(3) img { 
+        width: 100%; 
+    } 
+
+    main > article {
+        display: block; 
+        padding: 0 auto; 
+        margin-top: -3vh; 
+        text-align: center;
+    }
+    
+    main > article p {
+        width: 80%; 
+        margin: 4vh auto; 
+    }
+
+    footer div:nth-of-type(1) {
+        margin: 0 10vw 15vh 10vw; 
+        border-top: 2px solid #3D3E41; 
+    }
+
+
+}
+
+
+
+
